@@ -1,20 +1,13 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js";
-import { getFirestore, collection, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js";
+import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js";
 const firebaseConfig = {
-
   apiKey: "AIzaSyAtJW18iSNEhp5JJHX_8nWJGadhLYGtX1w",
-
   authDomain: "test-e8dcf.firebaseapp.com",
-
   projectId: "test-e8dcf",
-
   storageBucket: "test-e8dcf.firebasestorage.app",
-
   messagingSenderId: "342563741181",
-
   appId: "1:342563741181:web:e2d9bd63d4fa9824e7cd94"
-
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
